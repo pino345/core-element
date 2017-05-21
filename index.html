@@ -1,0 +1,268 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+        a[href] {
+            text-decoration: none;
+        }
+        h2 {
+            background-color: aquamarine;
+            margin-left: 515px;
+        }
+        p ~ ul {
+            list-style: none;
+        }
+        img[alt $="PAPER"]:hover {
+            cursor: pointer;
+        }
+        
+        header {
+            clear: both;
+            background: url(images/BML2017.mp4) no-repeat;
+            height: 1065px;
+        }
+        header video {
+            position: absolute;
+            width: 100%;
+            z-index: -1;
+        }
+        header > img {
+            float: left;
+            margin-top: 50px;
+            margin-left: 30px;
+        }
+        #navi {
+            position: fixed;
+            background-color: rgba( 255, 255, 255, 0.5);
+            width: 100%;
+        }
+        #navi ul, .Itext {
+            float: right;
+        }
+        #navi ul li {
+            list-style: none;
+            float: left;
+            padding: 10px 15px;
+            font-size: 20px;
+            font-weight: 800;
+        }
+        #navi ul li:nth-child(1), a[value ^="navi"]:active {
+            background-color: gold;
+        }
+        a[value ^="navi"]:link, a[value ^="navi"]:visited {
+            color: forestgreen;
+        }
+        a[value ^="navi"]:hover {
+            color: greenyellow;
+        }
+        a[value ^="navi"]:focus {
+            border: 1px solid black;
+        } 
+        #padding {
+            clear: both;
+            padding-top: 25%;
+        }
+        #btn {
+            clear: both;
+            background: url(images/btn.png) no-repeat;
+            margin: 0 auto;
+            width: 200px;
+            height: 60px;
+        }
+        #btn:hover {
+            background: url(images/btn1.png) no-repeat;
+            cursor: pointer;
+        }
+        
+        #info {
+            background: url(images/bg.png);
+            width: 100%;
+            height: 200px;
+        }
+        #info img {
+            width: 15%;
+            margin-top: 10px;
+            margin-left: 10%;
+        }
+        .Itext {
+            margin-top: 50px;
+            margin-right: 10%;
+            text-align: right;
+        }
+        .Itext p:last-of-type {
+            font-style: oblique;
+        }
+        h3+p {
+            font-style: italic;
+        }
+        
+        .content1 {
+            overflow: auto;
+            width: 100%;
+            text-align: center;
+            margin: 20px auto;
+        }
+        .content1 ul{
+            width: 1200px;
+            margin: 0 auto;
+        }
+        .content1 ul li {
+            list-style: none;
+            display: inline;
+        }
+        .content1 img {
+            width: 500px;
+            height: 500px;
+        }
+        
+        #btn2 {
+            background: url(images/btn2.png);
+            width: 200px;
+            height: 60px;
+            margin: 10px auto;
+        }
+        
+        .content2 {
+            clear: both;
+            background-color: beige;
+            width: 100%;
+            text-align: center;
+            padding: 20px 0px;
+        }
+        .content2 img {
+            width: 350px;
+            padding: 10px;
+        }
+        
+        img[alt*="목걸이"]:hover {
+            border-radius: 50%;
+            transform: scale(1.2);
+            cursor: zoom-in;
+        }
+        
+        img[alt~="질문"] {
+            border-radius: 50%;
+        }
+        
+        a[target="_blank"] {
+            cursor: pointer;
+        }
+        
+        h3:not([id=black]) {
+            color: salmon;
+        }
+        
+        footer {
+            width: 100%;
+            height: 70px;
+            padding-top: 10px;
+            background-color: #4e8aa6;
+            text-align: center;
+            color: white;
+        }
+        footer ul {
+            padding: 5px;
+        }
+        footer ul li{
+            display: inline;
+            width: 150px;
+            margin-right: 10px;
+        }
+        footer ul li a{
+            color: white;
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <video src="images/BML2017.mp4" preload loop muted autoplay>
+        </video>
+        <img src="images/logo_btn.png" alt="MINT PAPER">
+        <nav id="navi">
+            <ul>
+                <li>
+                    <a href="#" value="navi h">HOME</a>
+                </li>
+                <li>
+                    <a href="#" value="navi n">INFO</a>
+                </li>
+                <li>
+                    <a href="#" value="navi w">LINE UP</a>
+                </li>
+                <li>
+                    <a href="#" value="navi m">TIME TABLE</a>
+                </li>
+                <li>
+                    <a href="#" value="navi f">PLACE</a>
+                </li>
+                <li>
+                    <a href="#" value="navi l">TICKET</a>
+                </li>
+                <li>
+                    <a href="#" value="navi c">HISTORY</a>
+                </li>
+                <li>
+                    <input type="text" placeholder="검색">
+                </li>
+            </ul>
+        </nav>
+        <div id="padding">
+            <div id="btn"></div>
+        </div>
+    </header>
+    <aside id="info">
+        <img src="images/mintpaper_LOGO.png" alt="MINT PAPER 1">
+        <article class="Itext">
+            <h2>민트 페이퍼</h2>
+            <h3 id="black">모던한 삶을 위해</h3>
+            <p>조금 더 세련된 삶을 추구하는 욕구, 취미, 탐구활동</p>
+            <p>음악을 테마로 하지만, 사진·여행·공연·쇼핑 등 다양한 정보와 문화들을 놓치지 않을거에요</p>
+        </article>
+    </aside>
+    <section id="content">
+        <img src="images/bml2017_banner.jpg" alt="공연날짜" style="width: 100%;">
+        <article class="content1">
+            <ul>
+                <li><img src="images/bml2017_notice_01.jpg"></li>
+                <li><img src="images/bml2017_notice_02.jpg"></li>
+                <li style="clear:both;"><img src="images/bml2017_notice_03.jpg"></li>
+                <li><img src="images/bml2017_notice_04.jpg"></li>
+            </ul>
+        </article>
+        <article class="content2">
+            <h3 class="color">BML2017 D-15를 맞이하며</h3>
+            <img src="images/bml2017-d-15-info.jpg" alt="목걸이 속에 안내사항이 들어있어요">
+            <p>티켓을 손목밴드로 교환, 착용하실 때 하나씩 드리는 목걸이입니다.<br> 안에 있는 종이를 펼치면 타임테이블과 페스티벌맵, 주요 안내사항이 들어있습니다.</p>
+        </article>
+        <article class="content1">
+            <h3 class="color">BML2017 굿즈 런칭</h3>
+            <img src="images/bml2017_md.jpg">
+            <p>텐바이텐과 함께하는 공식 MD 사전 판매 진행 중입니다.<br> 사전 판매는 5월 3일(수)까지. 10% 할인 혜택도 있어요.</p>
+            <a href="*"><div id="btn2"></div></a>
+        </article>
+        <article class="content2">
+            <h3 class="color">티켓&amp;입장 자주 묻는 질문과 답</h3>
+            <a href="#" target="_blank"><img src="images/bml2017-faq-ticket.jpg" alt="티켓 질문"></a>
+            <a href="#" target="_blank"><img src="images/bml2017-faq-general.jpg" alt="일반 질문"></a>
+        </article>
+    </section>
+    <footer>
+        <ul>
+            <li><a href="#">about MINT PAPER</a></li>
+            <li><a href="#">이용약관</a></li>
+            <li><a href="#">개인정보취급방침</a></li>
+            <li><a href="#">CONTACT US</a></li>
+        </ul>
+        <p>&copy;2016 MINTPAPER ALL Right Reserved</p>
+    </footer>
+</body>
+
+</html>
