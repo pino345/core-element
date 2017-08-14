@@ -53,16 +53,16 @@
             font-size: 20px;
             font-weight: 800;
         }
-        #navi ul li:nth-child(1), a[value ^="navi"]:active {
+        #navi ul li:nth-child(1), a[class ^="menu"]:active {
             background-color: gold;
         }
-        a[value ^="navi"]:link, a[value ^="navi"]:visited {
+        a[class ^="menu"]:link, a[class ^="menu"]:visited {
             color: forestgreen;
         }
-        a[value ^="navi"]:hover {
+        a[class ^="menu"]:hover {
             color: greenyellow;
         }
-        a[value ^="navi"]:focus {
+        a[class ^="menu"]:focus {
             border: 1px solid black;
         } 
         #padding {
@@ -102,7 +102,9 @@
         h3+p {
             font-style: italic;
         }
-        
+        #content > img{
+            width: 100%;
+        }
         .content1 {
             overflow: auto;
             width: 100%;
@@ -189,25 +191,25 @@
         <nav id="navi">
             <ul>
                 <li>
-                    <a href="#" value="navi h">HOME</a>
+                    <a href="#" class="menu h">HOME</a>
                 </li>
                 <li>
-                    <a href="#" value="navi n">INFO</a>
+                    <a href="#" class="menu n">INFO</a>
                 </li>
                 <li>
-                    <a href="#" value="navi w">LINE UP</a>
+                    <a href="#" class="menu w">LINE UP</a>
                 </li>
                 <li>
-                    <a href="#" value="navi m">TIME TABLE</a>
+                    <a href="#" class="menu m">TIME TABLE</a>
                 </li>
                 <li>
-                    <a href="#" value="navi f">PLACE</a>
+                    <a href="#" class="menu f">PLACE</a>
                 </li>
                 <li>
-                    <a href="#" value="navi l">TICKET</a>
+                    <a href="#" class="menu l">TICKET</a>
                 </li>
                 <li>
-                    <a href="#" value="navi c">HISTORY</a>
+                    <a href="#" class="menu c">HISTORY</a>
                 </li>
                 <li>
                     <input type="text" placeholder="검색">
@@ -228,7 +230,7 @@
         </article>
     </aside>
     <section id="content">
-        <img src="images/bml2017_banner.jpg" alt="공연날짜" style="width: 100%;">
+        <img src="images/bml2017_banner.jpg" alt="공연날짜">
         <article class="content1">
             <ul>
                 <li><img src="images/bml2017_notice_01.jpg"></li>
